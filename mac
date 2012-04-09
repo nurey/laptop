@@ -35,6 +35,9 @@ echo "Installing ImageMagick, good for cropping and re-sizing images ..."
 echo "Installing QT, used by Capybara Webkit for headless Javascript integration testing ..."
   brew install qt
 
+echo "Installing Sphinx, the search engine ..."
+  brew install sphinx
+
 echo "Installing RVM (Ruby Version Manager) ..."
   bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
   echo "
