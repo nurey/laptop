@@ -43,6 +43,12 @@ echo "Installing RVM (Ruby Version Manager) ..."
   echo "
 # RVM
 [[ -s '/Users/`whoami`/.rvm/scripts/rvm' ]] && source '/Users/`whoami`/.rvm/scripts/rvm'" >> ~/.zshrc
-  source ~/.zshrc
+[[ -s '/Users/`whoami`/.rvm/scripts/rvm' ]] && source '/Users/`whoami`/.rvm/scripts/rvm'" >> ~/.bash_profile
+if [ $SHELL == '/bin/bash' ]; then
+  source ~/.bash_profile
+elif [ $SHELL == '/bin/zsh' ]; then
+	source ~/.zshrc
+fi
+
 
 bash < <(curl -s https://raw.github.com/nurey/laptop/wikiposit/ruby)
