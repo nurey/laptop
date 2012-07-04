@@ -2,6 +2,9 @@ echo "Installing Ruby 1.9.3-p194 and making it the default Ruby ..."
   rvm install 1.9.3-p194
   rvm use 1.9.3-p194 --default
 
+echo "Installing jruby-1.7.0.preview1"
+  rvm install jruby-1.7.0.preview1
+
 echo "Installing Rails to write and run web applications ..."
   gem install rails --no-rdoc --no-ri
 
